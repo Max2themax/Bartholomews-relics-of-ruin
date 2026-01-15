@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archaeology Adventure Game</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            background-color: #d4a574;
+            background-image: 
+                radial-gradient(circle at 20px 20px, #c9953d 8px, transparent 8px),
+                radial-gradient(circle at 60px 20px, #8b5a2b 8px, transparent 8px),
+                radial-gradient(circle at 40px 40px, #d2691e 8px, transparent 8px),
+                radial-gradient(circle at 80px 60px, #c9953d 8px, transparent 8px),
+                radial-gradient(circle at 20px 80px, #8b5a2b 8px, transparent 8px),
+                linear-gradient(90deg, transparent 48%, rgba(0,0,0,0.05) 48%, rgba(0,0,0,0.05) 52%, transparent 52%),
+                linear-gradient(0deg, transparent 48%, rgba(0,0,0,0.05) 48%, rgba(0,0,0,0.05) 52%, transparent 52%);
+            background-size: 100px 100px, 100px 100px, 100px 100px, 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+            background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('diggity-blasters-logo.png');
+            background-repeat: repeat;
+            background-size: 200px 200px;
+            opacity: 0.1;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f5e6d3;
+            border: 8px solid #8b5a2b;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .top-logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #5c3317;
+            font-size: 2.5em;
+            margin-top: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .game-frame {
+            margin: 20px auto;
+            border: 6px solid #8b5a2b;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        p {
+            font-size: 1.2em;
+            color: #5c3317;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #8b5a2b;
+        }
+        
+        .footer-logo {
+            width: 120px;
+            height: auto;
+            margin-top: 10px;
+        }
+        
+        .feedback-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8d4b8;
+            border: 4px solid #8b5a2b;
+            border-radius: 10px;
+        }
+        
+        .feedback-section h2 {
+            color: #5c3317;
+            font-size: 1.8em;
+        }
+        
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 3px solid #8b5a2b;
+            border-radius: 5px;
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            font-size: 1em;
+        }
+        
+        button {
+            background-color: #8b5a2b;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        button:hover {
+            background-color: #5c3317;
+        }
+        
+        .feedback-list {
+            margin-top: 20px;
+            text-align: left;
+        }
+        
+        .feedback-item {
+            background-color: #f5e6d3;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 2px solid #8b5a2b;
+        }
+        
+        .feedback-name {
+            font-weight: bold;
+            color: #5c3317;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="diggity-blasters-logo.png" alt="Diggity Blasters Logo" class="top-logo">
+        
+        <h1>🏺 Bartholomew's Relics of Ruin 🏺</h1>
+        
+        <p>Put on your explorer hat and dig into this exciting game!</p>
+        
+        <div class="game-frame">
+            <iframe src="https://scratch.mit.edu/projects/1247839221/embed" 
+                    allowtransparency="true" 
+                    width="700" 
+                    height="580" 
+                    frameborder="0" 
+                    scrolling="no" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+        
+        <p>Welcome to Bartholomew's Relics of Ruin, a fun archaeology game.</p>
+        
+        <p><strong>How to play:</strong> Click on the shovel to get dirtydirts. Click on the dirt to get artifacts and level up, but watch out for hazards.</p>
+        
+        <p>When you get enough artifacts you go up a level. Hazards make you lose dirtydirts and sometimes artifacts.</p>
+        
+        <p>The game is over if you lose all your artifacts.</p>
+        
+        <div class="footer">
+            Made by the Diggity Blasters! 🎮
+            <br>
+            <img src="diggity-blasters-logo.png" alt="Diggity Blasters Logo" class="footer-logo">
+        </div>
+        
+        <div class="feedback-section">
+            <h2>📝 Leave Feedback!</h2>
+            <p>Tell us what you think about the game!</p>
+            
+            <input type="text" id="nameInput" placeholder="Your name">
+            <textarea id="commentInput" rows="4" placeholder="Your feedback..."></textarea>
+            
+            <button onclick="submitFeedback()">Submit Feedback</button>
+            <button onclick="toggleFeedback()">View Feedback</button>
+            
+            <div id="feedbackList" class="feedback-list hidden"></div>
+        </div>
+    </div>
+    
+    <script>
+        let feedbackArray = [];
+        
+        function submitFeedback() {
+            const name = document.getElementById('nameInput').value;
+            const comment = document.getElementById('commentInput').value;
+            
+            if (name && comment) {
+                feedbackArray.push({ name: name, comment: comment });
+                document.getElementById('nameInput').value = '';
+                document.getElementById('commentInput').value = '';
+                alert('Thanks for your feedback! 🏺');
+                updateFeedbackDisplay();
+            } else {
+                alert('Please enter your name and feedback!');
+            }
+        }
+        
+        function toggleFeedback() {
+            const feedbackList = document.getElementById('feedbackList');
+            feedbackList.classList.toggle('hidden');
+            updateFeedbackDisplay();
+        }
+        
+        function updateFeedbackDisplay() {
+            const feedbackList = document.getElementById('feedbackList');
+            
+            if (feedbackArray.length === 0) {
+                feedbackList.innerHTML = '<p>No feedback yet. Be the first!</p>';
+            } else {
+                feedbackList.innerHTML = feedbackArray.map(fb => 
+                    `<div class="feedback-item">
+                        <div class="feedback-name">${fb.name}</div>
+                        <div>${fb.comment}</div>
+                    </div>`
+                ).join('');
+            }
+        }
+    </script>
+</body>
+</html>
